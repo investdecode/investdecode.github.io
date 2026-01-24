@@ -54,7 +54,7 @@ function formatJekyllDate(dateString: string): string | null {
 const config: Config = {
   title: "InvestDecode｜投資解碼",
   tagline:
-    "分享致富思維、財務資料分析以及價值投資心法與好用工具，解碼隱藏在新聞和財報後的商業洞察✨",
+    "分享致富思維、財務資料分析以及價值投資心法與實用工具，解碼隱藏在新聞和財報後的商業洞察✨",
   favicon: "/img/favicon.png",
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future

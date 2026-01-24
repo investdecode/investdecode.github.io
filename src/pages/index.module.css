@@ -14,6 +14,10 @@
   .heroBanner {
     padding: 2rem;
   }
+
+  .heroBanner .hero__title {
+    font-size: 2.5rem;
+  }
 }
 
 .buttons {
