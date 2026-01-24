@@ -1,0 +1,13 @@
+investdecode:
+  name: InvestDecode｜投資解碼
+  title: 站長
+  description: 校長兼撞鐘
+  url: https://www.investdecode.com
+  image_url: https://github.com/investdecode-user.png
+  page: true
+    # customize the url of the author page at /blog/authors/<permalink>
+  socials:
+    x: InvestDecode
+    github: investdecode
+    instagram: investdecode_com
+    website: https://www.investdecode.com
