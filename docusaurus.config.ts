@@ -52,7 +52,7 @@ function formatJekyllDate(dateString: string): string | null {
 }
 
 const config: Config = {
-  title: "InvestDecode｜投資解碼",
+  title: "InvestDecode 投資解碼",
   tagline:
     "分享致富思維、財務資料分析以及價值投資心法與實用工具，解碼隱藏在新聞和財報後的商業洞察✨",
   favicon: "/img/favicon.png",
@@ -199,7 +199,7 @@ const config: Config = {
     navbar: {
       title: "InvestDecode",
       logo: {
-        alt: "InvestDecode｜投資解碼 Logo",
+        alt: "InvestDecode 投資解碼 Logo",
         src: "img/logo.png",
       },
       items: [
@@ -272,7 +272,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} InvestDecode｜投資解碼, Inc. Built with ❤️ in Taiwan.`,
+      copyright: `Copyright © ${new Date().getFullYear()} InvestDecode 投資解碼, Inc. Built with ❤️ in Taiwan.`,
     },
     prism: {
       theme: prismThemes.github,
