@@ -39,14 +39,15 @@ const FeatureList: FeatureItem[] = [
 
 function Feature({ title, Png, description }: FeatureItem) {
   return (
-    <div className={clsx("col col--4")}>
-      <div className="text--center">
-        <img src={Png} className={styles.featurePng} role="img" />
-      </div>
-      <br />
-      <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
+    <div className={clsx("col col--4", styles.featureCol)}>
+      <div className={styles.featureCard}>
+        <div className="text--center">
+          <img src={Png} className={styles.featurePng} role="img" />
+        </div>
+        <Heading as="h3" className={styles.featureTitle}>
+          {title}
+        </Heading>
+        <p className={styles.featureDesc}>{description}</p>
       </div>
     </div>
   );
@@ -56,12 +57,19 @@ export default function HomepageFeatures(): ReactNode {
   return (
     <section className={styles.features}>
       <div className="container">
+        <div className={styles.sectionHeading}>
+          <Heading as="h2" className={styles.sectionTitle}>
+            解碼投資的三大核心
+          </Heading>
+          <p className={styles.sectionSubtitle}>
+            從思維建立到實戰工具，陪你走過完整的投資學習旅程
+          </p>
+        </div>
         <div className="row">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}
         </div>
-        <br />
       </div>
     </section>
   );

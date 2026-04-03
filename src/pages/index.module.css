@@ -4,15 +4,31 @@
  */
 
 .heroBanner {
-  padding: 4rem 0;
+  padding: 6rem 2rem;
   text-align: center;
   position: relative;
   overflow: hidden;
+  background:
+    linear-gradient(rgba(10, 25, 35, 0.7), rgba(10, 25, 35, 0.65)),
+    url("/img/cover.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.heroBanner .hero__title {
+  color: white;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+}
+
+.heroBanner .hero__subtitle {
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
 }
 
 @media screen and (max-width: 996px) {
   .heroBanner {
-    padding: 2rem;
+    padding: 3rem 1.5rem;
   }
 
   .heroBanner .hero__title {
@@ -24,29 +40,43 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
 }
 
-.heroBanner {
-  padding: 6rem 0;
+.newsletterWrapper {
+  padding: 4rem 1.5rem 3rem;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(0, 188, 212, 0.04) 100%
+  );
   text-align: center;
-  background:
-    linear-gradient(rgba(25, 60, 71, 0.6), rgba(25, 60, 71, 0.6)),
-    url("/img/cover.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  position: relative;
+  max-width: 720px;
+  margin: 0 auto;
 }
 
-.heroBanner .hero__title {
-  color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+.newsletterWrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #00bcd4, transparent);
 }
 
-.heroBanner .hero__subtitle {
-  color: rgba(255, 255, 255, 0.9);
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+.newsletterHeading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.4rem;
 }
 
-.buttons {
-  margin-top: 1.5rem;
+.newsletterSubtext {
+  color: rgba(255, 255, 255, 0.55);
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
 }

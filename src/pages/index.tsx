@@ -21,10 +21,7 @@ function HomepageHeader() {
           <Link className="button button--secondary button--lg" to="/blog">
             瀏覽最新文章
           </Link>
-          <Link
-            className="margin-left--sm button button--success button--lg"
-            to="/resources"
-          >
+          <Link className="button button--success button--lg" to="/resources">
             開始學習
           </Link>
         </div>
@@ -40,20 +37,28 @@ export default function Home(): ReactNode {
       <HomepageHeader />
       <main>
         <HomepageFeatures />
+        <div className={styles.newsletterWrapper}>
+          <Heading as="h2" className={styles.newsletterHeading}>
+            📬 訂閱電子報
+          </Heading>
+          <p className={styles.newsletterSubtext}>
+            每週精選投資洞察與學習資源，直送您的信箱
+          </p>
+          <iframe
+            src="https://investdecode.substack.com/embed"
+            width="100%"
+            height="320"
+            style={{
+              border: "1px solid rgba(77, 208, 225, 0.15)",
+              borderRadius: "12px",
+              maxWidth: "100%",
+              display: "block",
+            }}
+            frameBorder="0"
+            scrolling="no"
+          ></iframe>
+        </div>
       </main>
-      <iframe
-        src="https://investdecode.substack.com/embed"
-        width="100%"
-        height="320"
-        style={{
-          border: "1px solid #EEE",
-          maxWidth: "100%",
-          margin: "0 auto",
-          display: "block",
-        }}
-        frameBorder="0"
-        scrolling="no"
-      ></iframe>
     </Layout>
   );
 }
